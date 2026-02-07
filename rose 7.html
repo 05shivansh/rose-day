@@ -1,0 +1,253 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Rose Day, Divya 🌹</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');* { box-sizing: border-box; }
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #1a1a3d, #070716 70%);
+  overflow: hidden;
+}
+
+.moon {
+  position: absolute;
+  top: 8%;
+  right: 12%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #cdb4ff);
+  box-shadow: 0 0 40px rgba(205,180,255,0.6);
+  animation: moonGlow 4s ease-in-out infinite;
+  opacity: 0.9;
+}
+
+@keyframes moonGlow {
+  0%,100% { box-shadow: 0 0 30px rgba(205,180,255,0.5); }
+  50% { box-shadow: 0 0 60px rgba(205,180,255,0.8); }
+}
+
+.card {
+  width: 90%;
+  max-width: 420px;
+  background: rgba(18, 18, 40, 0.7);
+  backdrop-filter: blur(18px);
+  border-radius: 30px;
+  padding: 32px 22px 38px;
+  text-align: center;
+  box-shadow: 0 35px 80px rgba(0,0,0,0.7);
+  animation: popIn 1s ease;
+  border: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.9rem;
+  color: #ffc6ff;
+  text-shadow: 0 0 18px rgba(255,198,255,0.55);
+}
+
+.rose {
+  font-size: 4rem;
+  margin: 16px 0 6px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.name-glow {
+  font-size: 1.2rem;
+  margin-top: 6px;
+  color: #e0c3ff;
+  text-shadow: 0 0 14px rgba(224,195,255,0.8);
+  animation: nameGlow 3s ease-in-out infinite;
+}
+
+@keyframes nameGlow {
+  0%,100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.shayari {
+  font-family: 'Noto Nastaliq Urdu', serif;
+  font-size: 1.05rem;
+  line-height: 2.1;
+  letter-spacing: 0.4px;
+  color: #f3d9ff;
+  text-shadow: 0 0 18px rgba(243,217,255,0.35);
+  margin: 18px 0;
+  opacity: 0;
+  filter: blur(10px);
+  animation: thoughtReveal 3s ease forwards;
+}
+
+@keyframes thoughtReveal {
+  0% { opacity: 0; filter: blur(12px); transform: translateY(6px); }
+  100% { opacity: 1; filter: blur(0); transform: translateY(0); }
+}
+
+p {
+  color: #f5edff;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 14px 0;
+}
+
+.highlight { color: #ff9df5; font-weight: 600; }
+
+button {
+  margin-top: 22px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #c77dff, #9d4edd);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 16px 36px rgba(157, 78, 221, 0.75);
+  transition: all 0.3s ease;
+}
+
+.hidden-message {
+  margin-top: 22px;
+  display: none;
+  animation: fadeIn 1.2s ease forwards;
+  padding: 20px 16px;
+  border-radius: 20px;
+  background: radial-gradient(circle at top, rgba(255,182,255,0.22), rgba(0,0,0,0));
+  box-shadow: 0 0 45px rgba(255,182,255,0.3);
+}
+
+.affirmation {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  color: #d9c7ff;
+  font-style: italic;
+}
+
+.signature {
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: #d7c6ff;
+  opacity: 0.9;
+}
+
+.float {
+  position: absolute;
+  bottom: -40px;
+  font-size: 1.4rem;
+  animation: rise linear infinite;
+  opacity: 0.85;
+  z-index: 1;
+}
+
+.burst {
+  position: absolute;
+  pointer-events: none;
+  animation: burst 1s ease-out forwards;
+  z-index: 3;
+}
+
+@keyframes rise {
+  from { transform: translateY(0); opacity: 0; }
+  to { transform: translateY(-110vh); opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes popIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes burst {
+  from { transform: scale(0.2); opacity: 1; }
+  to { transform: scale(1.7); opacity: 0; }
+}
+
+  </style>
+</head>
+<body>  <div class="moon"></div>  <audio id="bgm" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/10/25/audio_8b5f1b1b9b.mp3?filename=soft-piano-ambient-12399.mp3" type="audio/mpeg">
+  </audio>  <div class="card">
+    <h1>Happy Rose Day 🌹</h1>
+    <div class="rose">🌹</div>
+    <div class="name-glow">Divya 💜</div><p class="shayari">
+  कांटे जैसे दाने तो आने ही थे हमारे चेहरे पर ग़ालिब .. ✨<br />
+  आखिर हमने इंसान भी तो <span class="highlight">गुलाब जैसा</span> चुना है ❣️🌹
+</p>
+
+
+<button id="tapBtn" onclick="revealMessage()">Tap karo na, jaan 💌</button>
+
+<div class="hidden-message" id="msg">
+  <p>
+    Jaaneman… tum sirf cute nahi ho 😭❤️,
+    tum brave ho, tum capable ho,
+    aur tumhara future bohot bright hai ✨
+    <br /><br />
+    Padhai ke din thode tough lag sakte hain 📚,
+    par yaad rakhna —
+    tum mehnat karti ho toh universe bhi help karta hai 🌟
+  </p>
+  <div class="affirmation">
+    Aaj ka reminder 💜: tum kar sakti ho, tum worthy ho,
+    aur main hamesha tum par proud hoon 🌙✨
+  </div>
+  <div class="signature">— from someone who believes in you 🫶</div>
+</div>
+
+  </div>  <script>
+    function revealMessage() {
+      document.getElementById('msg').style.display = 'block';
+      document.getElementById('bgm').play();
+
+      const btn = document.getElementById('tapBtn');
+      btn.style.opacity = '0';
+      btn.style.transform = 'scale(0.8)';
+      setTimeout(() => btn.style.display = 'none', 300);
+
+      heartBurst();
+    }
+
+    function heartBurst() {
+      const hearts = ['💜','💖','❤️','✨','🌹'];
+      for (let i = 0; i < 20; i++) {
+        const span = document.createElement('span');
+        span.className = 'burst';
+        span.innerText = hearts[Math.floor(Math.random() * hearts.length)];
+        span.style.left = 40 + Math.random() * 20 + 'vw';
+        span.style.top = 45 + Math.random() * 10 + 'vh';
+        span.style.fontSize = 18 + Math.random() * 18 + 'px';
+        document.body.appendChild(span);
+        setTimeout(() => span.remove(), 1000);
+      }
+    }
+
+    const emojis = ['🌹','💜','✨','🌙','❤️'];
+    for (let i = 0; i < 28; i++) {
+      const span = document.createElement('span');
+      span.className = 'float';
+      span.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+      span.style.left = Math.random() * 100 + 'vw';
+      span.style.animationDuration = 6 + Math.random() * 7 + 's';
+      span.style.fontSize = 14 + Math.random() * 22 + 'px';
+      document.body.appendChild(span);
+    }
+  </script></body>
+</html>
